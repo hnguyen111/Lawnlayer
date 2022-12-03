@@ -1,8 +1,15 @@
 # Lawnlayer Game
 
-The player uses arrow keys to move on the map and tries to avoid enemies that are bouncing around the map while capturing the area. Once a percentage of the map area has been captured, the level is won.
+The player uses arrow keys to move on the map and tries to avoid enemies (worms and beetles) that are bouncing around the map while capturing the area. Once a percentage of the map area has been captured, the level is won.
 
-There are two power-ups: slowing the enemies and speeding up the player for 10 seconds.
+There are two power-ups (cheese): slowing the enemies and speeding up the player for 10 seconds.
+
+If the player circles back and hits their own in-progress path, they lose a life and respawn.
+The player loses a life and respawns when:
+* they circle back and hit their own in-progress path.
+* the red path hits the player before they reach a safe tile (an enemy hits the path the player is laying out, the path tiles it hits will turn red and propagate outward towards the player).
+
+![image](https://user-images.githubusercontent.com/60818058/205441302-e0c42b42-d1ab-4083-915e-c7ca77017add.png)
 
 ## Usage
 The app can be downloaded by cloning the project.
